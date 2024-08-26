@@ -1,0 +1,5 @@
+package com.demo.repository;
+
+public interface userRepository extends JpaRepository<user, Long> {
+    user findByUsername(String username);
+}
